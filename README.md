@@ -26,9 +26,9 @@ sh ./utils/get_model.sh model_name output_directory
 * python 
 * CUDA 8.0
 
-## Data
-### [Cityscapes](https://www.cityscapes-dataset.com
-Cityscapes \cite{Cityscapes} is a large-scale database that focuses on semantic understanding of urban street scenes. It provides semantic, instance-wise, and dense pixel annotations for 30 classes grouped into 8 different categories such as flat surfaces, humans, vehicles, constructions, objects, nature, sky, and void. The dataset consists of around 5000 fine annotated images and 20,000 coarse annotated ones captured in 50 cities during several months, daytimes, and good weather conditions. Originally,  it was recorded as video so the frames given in the dataset were manually selected to have the following features: a large number of dynamic objects, varying scene layout, and varying background.
+## Dataset
+### [Cityscapes](https://www.cityscapes-dataset.com)
+Cityscapes is a large-scale database that focuses on semantic understanding of urban street scenes. It provides semantic, instance-wise, and dense pixel annotations for 30 classes grouped into 8 different categories such as flat surfaces, humans, vehicles, constructions, objects, nature, sky, and void. The dataset consists of around 5000 fine annotated images and 20,000 coarse annotated ones captured in 50 cities during several months, daytimes, and good weather conditions. Originally,  it was recorded as video so the frames given in the dataset were manually selected to have the following features: a large number of dynamic objects, varying scene layout, and varying background.
 
 You will need to register in order to download the data, which already has a refined train/val/test set with 5000 images. We used 3750 images for training.
 We used `leftImg8bit_trainvaltest.zip`, `rightImg8bit_trainvaltest.zip` with the refined labels for training. 
@@ -70,7 +70,7 @@ If your test filenames contain two files per line the model will ignore the seco
 The network will output two files `disparities.npy` and `disparities_pp.npy`, respecively for raw and post-processed disparities.
 
 ## Semantic Encoder
-Please find the trained model for UNet [here](https://drive.google.com/file/d/1NX7P4lKDTfLq5V8J-g7gbetB7pgvDWbJ/view?usp=sharing)
+Please find the trained model for UNet [here](https://drive.google.com/file/d/1WsEZgus1ca19VXXT7TN-1ljsESGhOEtr/view?usp=sharing)
 
 ## References
 * http://visual.cs.ucl.ac.uk/pubs/monoDepth/
